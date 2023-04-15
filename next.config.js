@@ -7,7 +7,7 @@ const nextConfig = {
 }
 
 module.exports = {
-  assetPrefix: isProd ? '/your-github-repo-name/' : '',
+  assetPrefix: isProd ? '/dushakov92.github.io/' : '',
   images: {
     unoptimized: true,
   },
