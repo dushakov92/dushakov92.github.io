@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { Table } from "@radix-ui/themes";
 import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faBan } from '@fortawesome/free-solid-svg-icons'
 import SVG from 'react-inlinesvg';
 
 export default function Home() {
