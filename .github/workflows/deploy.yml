@@ -24,7 +24,6 @@ jobs:
         run: |
           npm ci --registry https://registry.npmjs.org/
           npm run build
-          npm run export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
