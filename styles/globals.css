@@ -48,3 +48,7 @@ a {
   text-underline-offset: 4px;
   color: var(--color-sky-700);
 }
+
+table tr:nth-child(even) {
+  background-color: var(--color-stone-900);
+}

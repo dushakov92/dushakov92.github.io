@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - PostAI by dxu</title>
+        <title>Home - PostAI</title>
       </Head>
       <main className="flex flex-col items-center justify-between px-6 py-6 md:px-12 xl:px-24">
         <div className="w-full xl:w-2/3 flex flex-col items-center mb-4">
           <h1 className="text-3xl">PostAI</h1>
           <p className="text-lg">Integrate AI models to generate AI-powered content like excerpts, images, and proofreading assistance directly from the post editor.</p>
         </div>
-          <Table.Root variant="surface" className="w-full xl:w-2/3">
+          <Table.Root variant="ghost" className="w-full xl:w-2/3">
               <Table.Header>
                 <Table.Row>
                   <Table.ColumnHeaderCell></Table.ColumnHeaderCell>
