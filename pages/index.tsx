@@ -26,98 +26,98 @@ export default function Home() {
               <Table.Body>
                 <Table.Row>
                   <Table.RowHeaderCell>AI Excerpt Generation</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>AI Image Generation</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>OpenAI Model</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Gemini Model</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>AI Content Proof Reading</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
                 
                 <Table.Row>
                   <Table.RowHeaderCell>AI Writing Assistance</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Front-end Widget</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Enable for all post types or selected ones</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Update excerpt length</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Edit excerpt generation prompt</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Use custom fields for enhanced AI results</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Change image size</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Use post excerpt as image generation prompt for enhanced AI results</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Edit image generation prompt</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Allow AI learn about website for enhanced AI results</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
                   <Table.RowHeaderCell>Access additional AI models</Table.RowHeaderCell>
-                  <Table.Cell><SVG src="/images/ban.svg" /></Table.Cell>
-                  <Table.Cell><SVG src="/images/check.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-red-700" src="/images/ban.svg" /></Table.Cell>
+                  <Table.Cell><SVG className="w-5 text-green-700" src="/images/check.svg" /></Table.Cell>
                 </Table.Row>
 
                 <Table.Row>
