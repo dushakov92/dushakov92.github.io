@@ -11,7 +11,7 @@ export default function Documentation() {
       <Navigation />
       <main className="flex flex-col items-center justify-between px-6 pt-24 pb-6 md:px-12 xl:px-24">
         <h1>Documentation</h1>
-        <div className="grid grid-cols-12 w-full gap-10">
+        <div className="grid grid-cols-12 w-full max-w-full gap-6 md:gap-10">
           <aside className="col-span-12 md:col-span-3 md:sticky top-24 h-fit">
             <TableOfContent />
           </aside>
