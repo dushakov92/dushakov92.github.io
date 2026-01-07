@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Table } from "@radix-ui/themes";
 import Link from "next/link";
 import SVG from 'react-inlinesvg';
+import { Navigation } from "@/components/navigation";
 
 export default function Home() {
   return (
@@ -9,9 +10,11 @@ export default function Home() {
       <Head>
         <title>Home - PostAI</title>
       </Head>
-      <main className="flex flex-col items-center justify-between px-6 py-6 md:px-12 xl:px-24">
+      <Navigation />
+      <main className="flex flex-col items-center justify-between px-6 pt-24 py-6 md:px-12 xl:px-24">
         <div className="w-full xl:w-2/3 flex flex-col items-center mb-4">
-          <h1 className="text-3xl">PostAI</h1>
+          <h1 className="text-xl mb-8 font-bold">Professional AI Content Assistant for WordPress</h1>
+          <p className="text-lg">Supercharge your editorial workflow and engage visitors with intelligent content generation.</p>
           <p className="text-lg">Integrate AI models to generate AI-powered content like excerpts, images, and proofreading assistance directly from the post editor.</p>
         </div>
           <Table.Root variant="ghost" className="w-full xl:w-2/3">
