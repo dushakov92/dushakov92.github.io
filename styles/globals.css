@@ -17,6 +17,25 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-yellow-700);
+  }
 }
 
 :root {
@@ -31,6 +50,10 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+html {
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -55,9 +78,20 @@ nav {
 a {
   text-decoration: underline;
   text-underline-offset: 4px;
-  color: var(--color-sky-700);
+  color: var(--color-sky-500);
+}
+
+p {
+  line-height: 1.75;
 }
 
 table tr:nth-child(even) {
   background-color: var(--color-stone-900);
+}
+
+code {
+  font-family: "Fira Mono", monospace;
+  background-color: var(--color-stone-900);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
 }

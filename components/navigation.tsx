@@ -1,18 +1,16 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = [
-    { name: 'Documentation', href: '/documentation/' },
-  ];
+  const navItems = [{ name: "Documentation", href: "/documentation/" }];
 
   return (
     <nav className="fixed w-full top-0 z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="shrink-0">
-            <a href="#" className="text-3xl no-underline! hover:underline! text-white!">
+            <a href="/" className="text-3xl no-underline! text-white!">
               PostAI
             </a>
           </div>
@@ -51,7 +49,7 @@ export const Navigation = () => {
       {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="px-6 py-12">
