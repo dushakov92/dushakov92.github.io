@@ -3,6 +3,7 @@ import { Table } from "@radix-ui/themes";
 import Link from "next/link";
 import SVG from "react-inlinesvg";
 import { Navigation } from "@/components/navigation";
+import { TableSection } from "@/components/table-section";
 
 export default function Home() {
   return (
@@ -25,243 +26,87 @@ export default function Home() {
         </div>
         <Table.Root variant="ghost" className="w-full xl:w-2/3">
           <Table.Header>
-            <Table.Row>
-              <Table.ColumnHeaderCell></Table.ColumnHeaderCell>
-              <Table.ColumnHeaderCell>Free</Table.ColumnHeaderCell>
-              <Table.ColumnHeaderCell>Pro</Table.ColumnHeaderCell>
-            </Table.Row>
+            <TableSection
+              availableInFree={false}
+              availableInPro={false}
+              childrenFree="Free"
+              childrenPro="Pro"
+            />
           </Table.Header>
 
           <Table.Body>
-            <Table.Row>
-              <Table.RowHeaderCell>AI Excerpt Generation</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection
+              header="AI Excerpt Generation"
+              availableInFree={true}
+            />
 
-            <Table.Row>
-              <Table.RowHeaderCell>AI Image Generation</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection
+              header="AI Excerpt Generation"
+              availableInFree={true}
+            />
 
-            <Table.Row>
-              <Table.RowHeaderCell>OpenAI Model</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="OpenAI Model" availableInFree={true} />
 
-            <Table.Row>
-              <Table.RowHeaderCell>Gemini Model</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Gemini Model" availableInFree={true} />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                AI Content Proof Reading
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection
+              header="AI Content Proof Reading"
+              availableInFree={true}
+            />
 
-            <Table.Row>
-              <Table.RowHeaderCell>AI Writing Assistance</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection
+              header="AI Writing Assistance"
+              availableInFree={true}
+            />
 
-            <Table.Row>
-              <Table.RowHeaderCell>Front-end Widget</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Front-end Widget" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Front-end Widget Settings
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Front-end Widget Settings" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Enable for all post types or selected ones
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Enable for all post types or selected ones" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>Update excerpt length</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Update excerpt length" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Edit excerpt generation prompt
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Edit excerpt generation prompt" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Use custom fields for enhanced AI results
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Use custom fields for enhanced AI results" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>Change image size</Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Change image size" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Use post excerpt as image generation prompt for enhanced AI
-                results
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Use post excerpt as image generation prompt for enhanced AI results" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Edit image generation prompt
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Edit image generation prompt" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Allow AI learn about website for enhanced AI results
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Allow AI learn about website for enhanced AI results" />
 
-            <Table.Row>
-              <Table.RowHeaderCell>
-                Access additional AI models
-              </Table.RowHeaderCell>
-              <Table.Cell>
-                <SVG className="w-5 text-red-700" src="/images/ban.svg" />
-              </Table.Cell>
-              <Table.Cell>
-                <SVG className="w-5 text-green-700" src="/images/check.svg" />
-              </Table.Cell>
-            </Table.Row>
+            <TableSection header="Access additional AI models" />
 
-            <Table.Row>
-              <Table.RowHeaderCell></Table.RowHeaderCell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-            </Table.Row>
+            <TableSection childrenFree={true} childrenPro={true} />
 
-            <Table.Row>
-              <Table.RowHeaderCell className="text-lg font-bold! align-middle!">
-                Documentation
-              </Table.RowHeaderCell>
-              <Table.Cell className="align-middle!">
-                <a href="/documentation/">View</a>
-              </Table.Cell>
-              <Table.Cell className="align-middle!">
-                <a href="/documentation/">View</a>
-              </Table.Cell>
-            </Table.Row>
+            <TableSection
+              header="Documentation"
+              childrenFree={<Link href="/documentation/">View</Link>}
+              childrenPro={<Link href="/documentation/">View</Link>}
+            />
 
-            <Table.Row>
-              <Table.RowHeaderCell className="text-lg font-bold! align-middle!">
-                Price
-              </Table.RowHeaderCell>
-              <Table.Cell className="align-middle!">$0</Table.Cell>
-              <Table.Cell className="align-middle!">Coming Soon</Table.Cell>
-            </Table.Row>
+            <TableSection
+              header="Price"
+              childrenFree={<Link href="/documentation/">$0</Link>}
+              childrenPro={<Link href="/documentation/">Coming Soon</Link>}
+            />
 
-            <Table.Row>
-              <Table.RowHeaderCell className="text-lg font-bold! align-middle!">
-                Download
-              </Table.RowHeaderCell>
-              <Table.Cell className="align-middle!">
+            <TableSection
+              header="Download"
+              childrenFree={
                 <Link
                   href="https://wordpress.org/plugins/search/post+ai/"
                   target="_blank"
                 >
                   Wordpress Marketplace
                 </Link>
-              </Table.Cell>
-              <Table.Cell className="align-middle!">Coming Soon</Table.Cell>
-            </Table.Row>
+              }
+              childrenPro={<Link href="/documentation/">Coming Soon</Link>}
+            />
           </Table.Body>
         </Table.Root>
       </main>
