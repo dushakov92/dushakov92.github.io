@@ -45,10 +45,6 @@ export default function Home() {
               availableInFree={true}
             />
 
-            <TableSection header="OpenAI Model" availableInFree={true} />
-
-            <TableSection header="Gemini Model" availableInFree={true} />
-
             <TableSection
               header="AI Content Proof Reading"
               availableInFree={true}
@@ -58,6 +54,10 @@ export default function Home() {
               header="AI Writing Assistance"
               availableInFree={true}
             />
+
+            <TableSection header="OpenAI Model" availableInFree={true} />
+
+            <TableSection header="Gemini Model" availableInFree={true} />
 
             <TableSection header="Front-end Widget" />
 
@@ -91,8 +91,8 @@ export default function Home() {
 
             <TableSection
               header="Price"
-              childrenFree={<Link href="/documentation/">$0</Link>}
-              childrenPro={<Link href="/documentation/">Coming Soon</Link>}
+              childrenFree="Free"
+              childrenPro="Coming Soon"
             />
 
             <TableSection
@@ -105,7 +105,7 @@ export default function Home() {
                   Wordpress Marketplace
                 </Link>
               }
-              childrenPro={<Link href="/documentation/">Coming Soon</Link>}
+              childrenPro="Coming Soon"
             />
           </Table.Body>
         </Table.Root>

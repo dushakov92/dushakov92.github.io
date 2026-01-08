@@ -25,8 +25,8 @@ export const TableOfContent = () => {
 
   return (
     <div role="navigation" aria-label="Table of Content">
-      <h2 className="font-bold text-lg mb-6">Table of Content</h2>
-      <ul className="space-y-3">
+      <h2 className="font-bold text-lg mb-1 md:mb-6">Table of Content</h2>
+      <ul className="md:space-y-3">
         {headings.map((heading) => (
           <li key={heading.id}>
             <a
