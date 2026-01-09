@@ -41,6 +41,11 @@ export default function Documentation() {
                       Pro version. Your settings will be preserved.
                     </em>
                   </p>
+                  <p>
+                    <em>
+                      The settings and features described in this documentation apply to Pro versions of the plugin, unless otherwise noted.
+                    </em>
+                  </p>
                 </>
               }
             />
