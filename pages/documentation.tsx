@@ -5,6 +5,7 @@ import { DocumentationSection } from "@/components/documentation-section";
 import { backendSettingsDocumentation } from "@/docs/backend-settings";
 import { frontendWidgetSettingsDocumentation } from "@/docs/frontend-widget-settings";
 import { settingUpFrontendWidgetDocumentation } from "@/docs/setting-up-frontend-widget";
+import { availableFiltersDocumentation } from "@/docs/available-filters";
 
 export default function Documentation() {
   return (
@@ -81,6 +82,11 @@ export default function Documentation() {
             <DocumentationSection
               header="Setting Up Frontend Widget"
               content={settingUpFrontendWidgetDocumentation}
+            />
+
+            <DocumentationSection
+              header="Available Filters"
+              content={availableFiltersDocumentation}
             />
           </div>
         </div>
