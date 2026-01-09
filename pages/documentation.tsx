@@ -43,7 +43,9 @@ export default function Documentation() {
                   </p>
                   <p>
                     <em>
-                      The settings and features described in this documentation apply to Pro versions of the plugin, unless otherwise noted.
+                      The settings and features described in this documentation
+                      apply to Pro versions of the plugin, unless otherwise
+                      noted.
                     </em>
                   </p>
                 </>
