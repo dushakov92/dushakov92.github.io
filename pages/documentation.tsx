@@ -4,6 +4,7 @@ import { TableOfContent } from "@/components/table-of-content";
 import { DocumentationSection } from "@/components/documentation-section";
 import { backendSettingsDocumentation } from "@/docs/backend-settings";
 import { frontendWidgetSettingsDocumentation } from "@/docs/frontend-widget-settings";
+import { settingUpFrontendWidgetDocumentation } from "@/docs/setting-up-frontend-widget";
 
 export default function Documentation() {
   return (
@@ -79,22 +80,7 @@ export default function Documentation() {
 
             <DocumentationSection
               header="Setting Up Frontend Widget"
-              children={
-                <>
-                  <p>
-                    To set up the frontend widget, add the{" "}
-                    <code>.postai-summary-trigger</code> class to an HTML
-                    element.
-                  </p>
-                  <p>
-                    When this element is clicked, the AI will generate a summary
-                    based on the page content and display it in a modal window,
-                    or attach it to a custom selector if specified in the
-                    settings. For example:{" "}
-                    <code>{`<button class="postai-summary-trigger">Summarize Page</button>`}</code>
-                  </p>
-                </>
-              }
+              content={settingUpFrontendWidgetDocumentation}
             />
           </div>
         </div>

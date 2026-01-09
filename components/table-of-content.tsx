@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { SimpleSearch } from "@/components/simple-search";
 
 interface Heading {
   id: string;
@@ -37,6 +38,9 @@ export const TableOfContent = () => {
             </a>
           </li>
         ))}
+        <li>
+          <SimpleSearch />
+        </li>
       </ul>
     </div>
   );

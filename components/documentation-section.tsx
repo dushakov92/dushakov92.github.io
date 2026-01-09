@@ -10,8 +10,8 @@ interface SectionContentProps {
 }
 
 const SectionContent = ({ title, description }: SectionContentProps) => (
-  <div className="flex flex-col md:flex-row md:gap-10 xl:gap-20">
-    {title && <h4 className="md:w-48 shrink-0">{title}</h4>}
+  <div className="flex flex-col xl:flex-row xl:gap-10 border-b border-b-gray-700 pb-10">
+    {title && <h4 className="xl:w-1/4 shrink-0">{title}</h4>}
     {description &&
       (typeof description === "string" &&
       /<([a-z][\s\S]*?)>/i.test(description) ? (
