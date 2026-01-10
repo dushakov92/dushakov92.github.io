@@ -34,4 +34,11 @@ export const backendSettingsDocumentation = [
     description:
       "<p>If the AI has generated an excerpt, it will be used to create images, resulting in smaller and more cost-effective requests.</p><p>This feature is available only when OpenAI models are enabled.</p>",
   },
+  {
+    title: "Allow AI to Learn About Site",
+    description:
+      "<p>Enable the AI to analyze your site and generate a summary based on the latest content.</p>" +
+      "<p>Choose how frequently the AI should perform this analysis (daily, weekly, monthly, etc.), and specify the number of posts to include per post type.</p>" +
+      "<p>This process runs automatically in the background at your selected intervals. Once complete, the AI-generated summary will be available for review.</p>",
+  },
 ];
