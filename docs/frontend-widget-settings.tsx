@@ -25,4 +25,10 @@ export const frontendWidgetSettingsDocumentation = [
       "<p>For private browsing, the summary is cached in memory; however, refreshing the page will clear it.</p>" +
       "<p>The cooldown helps prevent request abuse and keeps your costs lower.</p>",
   },
+  {
+    title: "Frontend Widget Summary Length",
+    description:
+      "<p>Set the maximum word count for the AI-generated summary in the frontend widget.</p>" +
+      "<p>Default: 60.</p>",
+  }
 ];

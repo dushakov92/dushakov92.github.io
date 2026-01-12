@@ -7,7 +7,7 @@ export const backendSettingsDocumentation = [
   {
     title: "Excerpt Length",
     description:
-      "<p>Set the maximum length (in words) for AI-generated excerpts.</p><p>The free version defaults to 50 words, while the Pro version defaults to 100 words.</p>",
+      "<p>Set the maximum length (in words) for AI-generated excerpts.</p><p>The free version defaults to 25 words, while the Pro version defaults to 50 words.</p>",
   },
   {
     title: "Excerpt Generation Prompt",
