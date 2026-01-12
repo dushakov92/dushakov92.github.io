@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,9 @@ export const Navigation = () => {
       <div className="mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center h-16">
           <div className="shrink-0">
-            <a href="/" className="text-3xl no-underline! text-white!">
+            <Link href="/" className="text-3xl no-underline! text-white!">
               PostAI
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

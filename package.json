@@ -8,25 +8,30 @@
     "export": "next build",
     "start": "next start",
     "lint": "eslint '**/*.{js,ts,tsx}' --fix && tsc --noEmit",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "before-release": "npm run format && npm run lint"
   },
   "dependencies": {
+    "@radix-ui/themes": "^3.2.1",
     "@tailwindcss/postcss": "^4.1.18",
     "next": "^16.1.1",
     "postcss": "^8.5.6",
-    "@radix-ui/themes": "^3.2.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-inlinesvg": "^4.2.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@types/node": "^25.0.3",
-    "@types/react": "^19.2.7",
+    "@eslint/eslintrc": "^3.3.3",
+    "@types/node": "^25.0.6",
+    "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.52.0"
   }
 }

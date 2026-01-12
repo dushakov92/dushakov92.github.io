@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Table } from "@radix-ui/themes";
 import Link from "next/link";
-import SVG from "react-inlinesvg";
 import { Navigation } from "@/components/navigation";
 import { TableSection } from "@/components/table-section";
 
@@ -35,29 +34,17 @@ export default function Home() {
           </Table.Header>
 
           <Table.Body>
-            <TableSection
-              header="AI Excerpt Generation"
-              availableInFree={true}
-            />
+            <TableSection header="AI Excerpt Generation" availableInFree />
 
-            <TableSection
-              header="AI Excerpt Generation"
-              availableInFree={true}
-            />
+            <TableSection header="AI Excerpt Generation" availableInFree />
 
-            <TableSection
-              header="AI Content Proof Reading"
-              availableInFree={true}
-            />
+            <TableSection header="AI Content Proof Reading" availableInFree />
 
-            <TableSection
-              header="AI Writing Assistance"
-              availableInFree={true}
-            />
+            <TableSection header="AI Writing Assistance" availableInFree />
 
-            <TableSection header="OpenAI Model" availableInFree={true} />
+            <TableSection header="OpenAI Model" availableInFree />
 
-            <TableSection header="Gemini Model" availableInFree={true} />
+            <TableSection header="Gemini Model" availableInFree />
 
             <TableSection header="Front-end Widget" />
 
@@ -81,7 +68,7 @@ export default function Home() {
 
             <TableSection header="Access additional AI models" />
 
-            <TableSection childrenFree={true} childrenPro={true} />
+            <TableSection childrenFree childrenPro />
 
             <TableSection
               header="Documentation"

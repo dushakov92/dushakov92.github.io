@@ -30,5 +30,5 @@ export const frontendWidgetSettingsDocumentation = [
     description:
       "<p>Set the maximum word count for the AI-generated summary in the frontend widget.</p>" +
       "<p>Default: 60.</p>",
-  }
+  },
 ];
