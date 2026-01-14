@@ -12,7 +12,7 @@ export const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="shrink-0">
             <Link href="/" className="text-3xl no-underline! text-white!">
-              PostAI
+              Paca AI
             </Link>
           </div>
 

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - PostAI</title>
+        <title>Home - Paca AI</title>
       </Head>
       <Navigation />
       <main className="flex flex-col items-center justify-between px-6 pt-24 pb-6 md:px-12 xl:px-24">
@@ -86,10 +86,10 @@ export default function Home() {
               header="Download"
               childrenFree={
                 <Link
-                  href="https://wordpress.org/plugins/search/post+ai/"
+                  href="https://wordpress.org/plugins/paca-ai/"
                   target="_blank"
                 >
-                  Wordpress Marketplace
+                  Wordpress
                 </Link>
               }
               childrenPro="Coming Soon"

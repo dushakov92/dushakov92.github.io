@@ -6,12 +6,13 @@ import { backendSettingsDocumentation } from "@/docs/backend-settings";
 import { frontendWidgetSettingsDocumentation } from "@/docs/frontend-widget-settings";
 import { settingUpFrontendWidgetDocumentation } from "@/docs/setting-up-frontend-widget";
 import { availableFiltersDocumentation } from "@/docs/available-filters";
+import Link from "next/link";
 
 export default function Documentation() {
   return (
     <>
       <Head>
-        <title>Documentation - PostAI</title>
+        <title>Documentation - Paca AI</title>
       </Head>
       <Navigation />
       <main className="flex flex-col items-center justify-between px-6 pt-24 pb-6 md:px-12 xl:px-24">
@@ -26,9 +27,16 @@ export default function Documentation() {
               children={
                 <>
                   <p>
-                    Install the free version of PostAI from the WordPress
-                    Plugins Marketplace, or purchase the Pro version and upload
-                    the ZIP file via the WordPress Plugins section.
+                    Install the <strong>Free</strong> version of Paca AI from
+                    the{" "}
+                    <Link
+                      href="https://wordpress.org/plugins/paca-ai/"
+                      target="_blank"
+                    >
+                      WordPress Plugins Marketplace
+                    </Link>
+                    , or purchase the Pro version and upload the ZIP file via
+                    the WordPress Plugins section.
                   </p>
                   <p>
                     After activating the plugin, navigate to the plugin settings
@@ -36,7 +44,7 @@ export default function Documentation() {
                   </p>
                   <p className="mt-5">
                     <em>
-                      Note: If you were using the free version of the PostAI
+                      Note: If you were using the free version of the Paca AI
                       plugin, make sure to deactivate it before activating the
                       Pro version. Your settings will be preserved.
                     </em>
