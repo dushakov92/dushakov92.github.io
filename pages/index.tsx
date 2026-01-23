@@ -79,7 +79,11 @@ export default function Home() {
             <TableSection
               header="Price"
               childrenFree="Free"
-              childrenPro="Coming Soon"
+              childrenPro={
+                <p>
+                  $9<sup>.99</sup>/year
+                </p>
+              }
             />
 
             <TableSection
@@ -92,7 +96,14 @@ export default function Home() {
                   Wordpress
                 </Link>
               }
-              childrenPro="Coming Soon"
+              childrenPro={
+                <Link
+                  href="https://dushakov.gumroad.com/l/paca-pro"
+                  target="_blank"
+                >
+                  Buy
+                </Link>
+              }
             />
           </Table.Body>
         </Table.Root>

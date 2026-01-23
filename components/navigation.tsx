@@ -1,10 +1,37 @@
 import { useState } from "react";
 import Link from "next/link";
 
+const MenuLinks = () => {
+  const links = [
+    {
+      name: "Get Pro",
+      href: "https://dushakov.gumroad.com/l/paca-pro",
+      className: "font-bold",
+    },
+    { name: "Documentation", href: "/documentation/" },
+  ];
+
+  return (
+    <>
+      {links.map((link) => (
+        <Link
+          key={link.name}
+          href={link.href}
+          className={
+            link.className
+              ? link.className
+              : "no-underline! hover:underline! text-white!"
+          }
+        >
+          {link.name}
+        </Link>
+      ))}
+    </>
+  );
+};
+
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [{ name: "Documentation", href: "/documentation/" }];
 
   return (
     <nav className="fixed w-full top-0 z-50">
@@ -18,15 +45,7 @@ export const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="no-underline! hover:underline! text-white!"
-              >
-                {item.name}
-              </a>
-            ))}
+            <MenuLinks />
           </div>
 
           {/* Hamburger Button */}
@@ -53,17 +72,8 @@ export const Navigation = () => {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-6 py-12">
-          {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="no-underline! hover:underline! text-white!"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.name}
-            </a>
-          ))}
+        <div className="flex flex-col max-w-min px-6 py-12">
+          <MenuLinks />
         </div>
       </div>
     </nav>
