@@ -101,7 +101,7 @@ export default function Home() {
                   href="https://dushakov.gumroad.com/l/paca-pro"
                   target="_blank"
                 >
-                  Buy
+                  Get Pro
                 </Link>
               }
             />

@@ -26,7 +26,12 @@ export default function Documentation() {
               header="Getting Started"
               children={
                 <>
-                  <p>
+                <p>
+                    <strong>Deactivate Free version before activating the
+                      Pro version.</strong> Your settings will be preserved.
+                    
+                  </p>
+                  <p className="mt-5">
                     Install the <strong>Free</strong> version of Paca AI from
                     the{" "}
                     <Link
@@ -35,7 +40,10 @@ export default function Documentation() {
                     >
                       WordPress Plugins Marketplace
                     </Link>
-                    , or purchase the Pro version and upload the ZIP file via
+                    , or <Link
+                      href="https://dushakov.gumroad.com/l/paca-pro"
+                      target="_blank"
+                    >get Pro</Link> version and upload the ZIP file via
                     the WordPress Plugins section.
                   </p>
                   <p>
@@ -43,18 +51,9 @@ export default function Documentation() {
                     page and connect your AI API key to begin using AI features.
                   </p>
                   <p className="mt-5">
-                    <em>
-                      Note: If you were using the free version of the Paca AI
-                      plugin, make sure to deactivate it before activating the
-                      Pro version. Your settings will be preserved.
-                    </em>
-                  </p>
-                  <p>
-                    <em>
-                      The settings and features described in this documentation
+                    The settings and features described in this documentation
                       apply to Pro versions of the plugin, unless otherwise
                       noted.
-                    </em>
                   </p>
                 </>
               }
