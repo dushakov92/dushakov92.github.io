@@ -2,7 +2,10 @@ import Head from "next/head";
 import { Navigation } from "@/components/navigation";
 import { TableOfContent } from "@/components/table-of-content";
 import { DocumentationSection } from "@/components/documentation-section";
-import { backendSettingsDocumentation } from "@/docs/backend-settings";
+import { aiContentAssistantDocumentation } from "@/docs/ai-content-assistant";
+import { aiTrainingDocumentation } from "@/docs/ai-training";
+import { aiSearchDocumentation } from "@/docs/ai-search";
+import { settingUpAiSearchDocumentation } from "@/docs/setting-up-ai-search";
 import { frontendWidgetSettingsDocumentation } from "@/docs/frontend-widget-settings";
 import { settingUpFrontendWidgetDocumentation } from "@/docs/setting-up-frontend-widget";
 import { availableFiltersDocumentation } from "@/docs/available-filters";
@@ -26,34 +29,25 @@ export default function Documentation() {
               header="Getting Started"
               children={
                 <>
-                <p>
-                    <strong>Deactivate Free version before activating the
-                      Pro version.</strong> Your settings will be preserved.
-                    
-                  </p>
-                  <p className="mt-5">
-                    Install the <strong>Free</strong> version of Paca AI from
-                    the{" "}
+                  <p>
+                    Install Paca AI from the{" "}
                     <Link
                       href="https://wordpress.org/plugins/paca-ai/"
                       target="_blank"
                     >
                       WordPress Plugins Marketplace
                     </Link>
-                    , or <Link
-                      href="https://dushakov.gumroad.com/l/paca-pro"
-                      target="_blank"
-                    >get Pro</Link> version and upload the ZIP file via
-                    the WordPress Plugins section.
+                    .
                   </p>
-                  <p>
+                  <p className="mt-5">
                     After activating the plugin, navigate to the plugin settings
                     page and connect your AI API key to begin using AI features.
                   </p>
                   <p className="mt-5">
-                    The settings and features described in this documentation
-                      apply to Pro versions of the plugin, unless otherwise
-                      noted.
+                    <strong>AI Streaming</strong> is an optional add-on that enables
+                    real-time streaming responses for AI Search, excerpt generation,
+                    and content writing. It is purchased separately and activated
+                    via a license key in the plugin settings.
                   </p>
                 </>
               }
@@ -84,8 +78,23 @@ export default function Documentation() {
             />
 
             <DocumentationSection
-              header="Backend Settings"
-              content={backendSettingsDocumentation}
+              header="AI Content Assistant"
+              content={aiContentAssistantDocumentation}
+            />
+
+            <DocumentationSection
+              header="AI Training"
+              content={aiTrainingDocumentation}
+            />
+
+            <DocumentationSection
+              header="AI Search"
+              content={aiSearchDocumentation}
+            />
+
+            <DocumentationSection
+              header="Setting Up AI Search"
+              content={settingUpAiSearchDocumentation}
             />
 
             <DocumentationSection

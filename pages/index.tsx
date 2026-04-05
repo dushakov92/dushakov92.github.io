@@ -46,6 +46,8 @@ export default function Home() {
 
             <TableSection header="Gemini Model" availableInFree />
 
+            <TableSection header="AI Search Frontend Widget" childrenFree="Coming Soon" childrenPro="Coming Soon" />
+
             <TableSection header="Front-end Widget" />
 
             <TableSection header="Front-end Widget Settings" />
@@ -69,6 +71,12 @@ export default function Home() {
             <TableSection header="Access additional AI models" />
 
             <TableSection childrenFree childrenPro />
+
+            <TableSection
+              header="PHP"
+              childrenFree="7.4+"
+              childrenPro="8.1+"
+            />
 
             <TableSection
               header="Documentation"

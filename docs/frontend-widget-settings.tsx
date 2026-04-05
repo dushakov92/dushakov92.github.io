@@ -3,7 +3,7 @@ export const frontendWidgetSettingsDocumentation = [
     title: "Frontend Widget Selector for Main Content",
     description:
       "<p>Specify a selector for the main content area from which the AI will extract content.</p>" +
-      '<p>The default selectors are: <code>main, article, [role=\"main\"], .entry-content, .post-content, .content, #content, .main, or #main</code></p>' +
+      '<p>The default selectors are: <code>main, article, [role="main"], .entry-content, .post-content, .content, #content, .main, or #main</code></p>' +
       "<p>If your page's main content does not reside within the default HTML elements, you can specify a custom selector for the AI to use.</p>" +
       "<p>For example: <code>.my-main-content</code> or <code>#my-main-content</code></p>",
   },
@@ -26,9 +26,15 @@ export const frontendWidgetSettingsDocumentation = [
       "<p>The cooldown helps prevent request abuse and keeps your costs lower.</p>",
   },
   {
-    title: "Frontend Widget Summary Length",
+    title: "Summary Character Limit",
     description:
-      "<p>Set the maximum word count for the AI-generated summary in the frontend widget.</p>" +
-      "<p>Default: 60.</p>",
+      "<p>Set the maximum character count for the AI-generated summary in the frontend widget.</p>" +
+      "<p>Default: 400.</p>",
+  },
+  {
+    title: "Frontend Widget Custom Prompt",
+    description:
+      "<p>Customize the prompt used when generating the frontend widget summary.</p>" +
+      "<p>Maximum 500 characters.</p>",
   },
 ];
