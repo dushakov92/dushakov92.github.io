@@ -25,8 +25,10 @@ export const settingUpAiSearchDocumentation = [
       "<li><code>display_results</code> — show result cards, <code>1</code> or <code>0</code> (default: 0)</li>" +
       "<li><code>placeholder</code> — custom placeholder text</li>" +
       "<li><code>lazy_load</code> — auto-load on scroll, <code>1</code> or <code>0</code> (default: 0)</li>" +
+      "<li><code>results_template</code> — ID of the <code>wp.template</code> to use for result cards (default: <code>paca-ai-search-result</code>)</li>" +
+      "<li><code>answer_template</code> — ID of the <code>wp.template</code> to use for the AI answer (default: <code>paca-ai-search-answer-result</code>)</li>" +
       "</ul>" +
-      '<p>Example: <code>[paca_ai_search display_answer="1" display_results="1" results_per_page="6"]</code></p>',
+      '<p>Example: <code>[paca_ai_search display_answer="1" display_results="1" results_per_page="6" results_template="my-search-result" answer_template="my-search-answer"]</code></p>',
   },
   {
     title: "Custom Result Template",
@@ -50,5 +52,19 @@ export const settingUpAiSearchDocumentation = [
       "<p><code>&nbsp;&nbsp;&nbsp;&nbsp;return $item;</code></p>" +
       "<p><code>}, 10, 2 );</code></p>" +
       "<p>The field will then be available in your template as <code>{{ data.reading_time }}</code>.</p>",
+  },
+  {
+    title: "Custom Answer Template",
+    description:
+      "<p>The AI-generated answer box uses a separate template. Override it the same way as the result template.</p>" +
+      "<p><strong>Step 1</strong> — Register your answer template in the footer:</p>" +
+      "<p><code>add_action( 'wp_footer', function () { ?&gt;</code></p>" +
+      '<p><code>&lt;script type="text/html" id="tmpl-my-search-answer"&gt;</code></p>' +
+      "<p><code>&nbsp;&nbsp;&lt;div class=\"my-answer\"&gt;{{{ data.answer }}}&lt;/div&gt;</code></p>" +
+      "<p><code>&lt;/script&gt;</code></p>" +
+      "<p><code>&lt;?php } );</code></p>" +
+      "<p>Use <code>{{{ data.answer }}}</code> (triple braces) since the answer contains HTML.</p>" +
+      "<p><strong>Step 2</strong> — Pass the template ID to the shortcode:</p>" +
+      '<p><code>[paca_ai_search answer_template="my-search-answer"]</code></p>',
   },
 ];
