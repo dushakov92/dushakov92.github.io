@@ -44,10 +44,10 @@ export default function Documentation() {
                     page and connect your AI API key to begin using AI features.
                   </p>
                   <p className="mt-5">
-                    <strong>AI Streaming</strong> is an optional add-on that enables
-                    real-time streaming responses for AI Search, excerpt generation,
-                    and content writing. It is purchased separately and activated
-                    via a license key in the plugin settings.
+                    <strong>AI Streaming</strong> is an optional add-on that
+                    enables real-time streaming responses for AI Search, excerpt
+                    generation, and content writing. It is purchased separately
+                    and activated via a license key in the plugin settings.
                   </p>
                 </>
               }

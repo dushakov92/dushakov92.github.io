@@ -34,15 +34,15 @@ export const settingUpAiSearchDocumentation = [
       "<p>By default, AI Search renders results using a built-in card template. You can replace it with your own from your theme's <code>functions.php</code>.</p>" +
       "<p><strong>Step 1</strong> — Register your template in the footer:</p>" +
       "<p><code>add_action( 'wp_footer', function () { ?&gt;</code></p>" +
-      "<p><code>&lt;script type=\"text/html\" id=\"tmpl-my-search-result\"&gt;</code></p>" +
+      '<p><code>&lt;script type="text/html" id="tmpl-my-search-result"&gt;</code></p>' +
       "<p><code>&nbsp;&nbsp;&lt;# console.log(data); #&gt;</code></p>" +
-      "<p><code>&nbsp;&nbsp;&lt;article&gt;&lt;a href=\"{{ data.permalink }}\"&gt;{{ data.post_title }}&lt;/a&gt;&lt;/article&gt;</code></p>" +
+      '<p><code>&nbsp;&nbsp;&lt;article&gt;&lt;a href="{{ data.permalink }}"&gt;{{ data.post_title }}&lt;/a&gt;&lt;/article&gt;</code></p>' +
       "<p><code>&lt;/script&gt;</code></p>" +
       "<p><code>&lt;?php } );</code></p>" +
       "<p>Use <code>{{ data.field }}</code> for escaped output, <code>{{{ data.field }}}</code> for raw HTML, and <code>&lt;# if (condition) { #&gt;</code> for logic.</p>" +
       "<p>Add <code>&lt;# console.log(data); #&gt;</code> inside the template to inspect all available fields in your browser console.</p>" +
       "<p><strong>Step 2</strong> — Pass the template ID to the shortcode:</p>" +
-      "<p><code>[paca_ai_search results_template=\"my-search-result\"]</code></p>" +
+      '<p><code>[paca_ai_search results_template="my-search-result"]</code></p>' +
       "<p>Available data fields by default: <code>post_title</code>, <code>permalink</code>, <code>post_excerpt</code>, <code>thumbnail_url</code>, <code>categories</code> (array), <code>post_author</code>, <code>post_date</code>, <code>score</code>.</p>" +
       "<p><strong>Adding custom fields</strong> — Use the <code>paca_ai_search_result_item</code> filter in your <code>functions.php</code> to add any additional data to each result:</p>" +
       "<p><code>add_filter( 'paca_ai_search_result_item', function( $item, $post ) {</code></p>" +

@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const MenuLinks = () => {
   const links = [
     {
-      name: "Get Pro",
-      href: "https://dushakov.gumroad.com/l/paca-pro",
+      name: "Get AI Streaming",
+      href: "https://dushakov.gumroad.com/l/paca-ai-streaming",
       className: "font-bold",
     },
     { name: "Documentation", href: "/documentation/" },
